@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEVANIX TECHNOLOGIES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #060913;
+      color: #F8FAFC;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background-color: #090D1C;
+      border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+    }
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #F8FAFC;
+    }
+    .logo span {
+      color: #00F0FF;
+    }
+    nav a {
+      color: #94A3B8;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00F0FF;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: radial-gradient(circle at center, rgba(0, 240, 255, 0.08) 0%, #060913 70%);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #00F0FF;
+      text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+      margin-bottom: 20px;
+    }
+    .tagline {
+      max-width: 700px;
+      margin: 0 auto 35px;
+      font-size: 1.2rem;
+      color: #E2E8F0;
+      font-style: italic;
+    }
+    .hero-buttons a {
+      display: inline-block;
+      padding: 12px 28px;
+      margin: 8px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-primary {
+      background-color: #00F0FF;
+      color: #060913;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    }
+    .btn-secondary {
+      border: 1px solid #00F0FF;
+      color: #00F0FF;
+    }
+    .wings-section {
+      padding: 70px 8%;
+      text-align: center;
+    }
+    .wings-section h2, .institute-section h2 {
+      font-size: 2rem;
+      color: #00F0FF;
+      margin-bottom: 40px;
+    }
+    .wings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background-color: #0D1326;
+      padding: 30px 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 240, 255, 0.25);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+      border-color: #00F0FF;
+    }
+    .card h3 {
+      color: #00F0FF;
+      margin-bottom: 12px;
+    }
+    .card p {
+      color: #94A3B8;
+      font-size: 0.95rem;
+    }
+    .institute-section {
+      padding: 70px 8%;
+      text-align: center;
+      background-color: #090D1C;
+      border-top: 1px solid rgba(0, 240, 255, 0.15);
+      border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+    }
+    .institute-section p {
+      max-width: 750px;
+      margin: 0 auto;
+      color: #CBD5E1;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748B;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 15px; }
+      nav a { margin: 0 10px; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DEVANIX <span>TECHNOLOGIES</span></div>
+    <nav>
+      <a href="#wings">Wings</a>
+      <a href="#institute">Institute</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>DEVANIX TECHNOLOGIES</h1>
+    <p class="tagline">"Securing Digital Frontiers, Empowering Future Tech."</p>
+    <div class="hero-buttons">
+      <a href="#wings" class="btn-primary">Explore Our Wings</a>
+      <a href="#institute" class="btn-secondary">Devanix Institute</a>
+    </div>
+  </section>
+
+  <section id="wings" class="wings-section">
+    <h2>Our Four Core Wings</h2>
+    <div class="wings-grid">
+      <div class="card">
+        <h3>DEVANIX CYBER</h3>
+        <p>Protecting digital assets, securing data, and building resilient cyber defense systems.</p>
+      </div>
+      <div class="card">
+        <h3>DEVANIX AI</h3>
+        <p>Developing intelligent automation and next-generation artificial intelligence solutions.</p>
+      </div>
+      <div class="card">
+        <h3>DEVANIX SOFTWARE</h3>
+        <p>Engineering scalable, modern web and enterprise software applications.</p>
+      </div>
+      <div class="card">
+        <h3>DEVANIX CLOUD</h3>
+        <p>Delivering reliable, high-speed, and secure cloud infrastructure and hosting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="institute" class="institute-section">
+    <h2>DEVANIX INSTITUTE</h2>
+    <p class="tagline">"Spread the light of education all around, so that the darkness of ignorance nowhere remains."</p>
+    <p>Empowering students with free practical tech education, study materials, and hands-on internships so financial barriers never stop talent.</p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2026 DEVANIX TECHNOLOGIES. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
